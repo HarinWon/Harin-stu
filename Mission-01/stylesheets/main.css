@@ -4,3 +4,14 @@
 
 /* 페이지별 스타일 */
 @import url("./pages/discovery.css");
+
+#TodayDiscoveryHeadline {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #aaa9a9;
+  gap: 6px;
+  h2 {
+    color: black;
+  }
+}
