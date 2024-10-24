@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>내비게이션 및 푸터 - 쿠팡(Coupang)</title>
+    <link rel="icon" href="./assets/favicon/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./stylesheets/main.css" />
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- 헤더 영역 -->
+      <!-- 대제목의 경우 "Coupang"으로 미리 마크업되어 있습니다. -->
+      <h1 class="sr-only">Coupang</h1>
+      <div class="header__inner">
+        <button class="button--category" aria-label="카테고리 버튼">
+          <div class="menu-img">
+            <img src="./assets/icon/hamburger.svg" alt="menu" />
+          </div>
+          <label for="category">카테고리</label>
+        </button>
+      </div>
+    </header>
+
+    <nav class="navigation">
+      <div class="navigation__inner">
+        <ul class="navigation__list">
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/clothes.svg"
+                alt="clothes"
+                aria-label="패션의류/잡화"
+              />패션의류/잡화
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/beauty.svg"
+                alt="beauty"
+                aria-label="뷰티"
+              />뷰티
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/baby.svg"
+                alt="baby"
+                aria-label="출산유아동"
+              />출산유아동
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/foods.svg"
+                alt="foods"
+                aria-label="식품"
+              />식품
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/kitchenware.svg"
+                alt="kitchenware"
+                aria-label="주방용품"
+              />주방용품
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/houseware.svg"
+                alt="houseware"
+                aria-label="생활용품"
+              />생활용품
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/interior.svg"
+                alt="interior"
+                aria-label="홈인테리어"
+              />홈인테리어
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/appliances.svg"
+                alt="appliances"
+                aria-label="가전디지털"
+              />가전디지털
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/sports.svg"
+                alt="sports"
+                aria-label="스포츠"
+              />스포츠
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/car.svg"
+                alt="car"
+                aria-label="자동차용품"
+              />자동차용품
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/book.svg"
+                alt="book"
+                aria-label="도서음반"
+              />도서음반
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/toy.svg"
+                alt="toy"
+                aria-label="완구취미"
+              />완구취미
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/stationery.svg"
+                alt="toy"
+                aria-label="문구오피스"
+              />문구오피스
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/pet.svg"
+                alt="pet"
+                aria-label="반려동물"
+              />반려동물
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/travel.svg"
+                alt="travel"
+                aria-label="여행티켓"
+              />여행티켓
+            </a>
+          </li>
+          <li>
+            <a href="\">
+              <img
+                src="./assets/iconfont/theme.svg"
+                alt="theme"
+                aria-label="테마관"
+              />테마관 <img src="./assets/icon/new.svg" alt="new" />
+            </a>
+          </li>
+        </ul>
+        <ul class="navigation__list">
+          <li><a href="\" aria-label="여성패션">여성패션</a></li>
+          <li><a href="\" aria-label="남성패션">남성패션</a></li>
+          <li><a href="\" aria-label="유아동패션">유아동패션</a></li>
+        </ul>
+        <ul class="navigation__list">
+          <li><a href="\" aria-label="의류">의류</a></li>
+          <li><a href="\" aria-label="속옷/잠옷">속옷/잠옷</a></li>
+          <li><a href="\" aria-label="신발">의류</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!-- 메인 콘텐츠 영역 -->
+      <!-- 해당 영역은 추가적인 마크업없이 비워놓아 주세요. -->
+    </main>
+
+    <footer class="footer">
+      <article class="footer-top">
+        <ul class="footer-top-list">
+          <li><a href="\" aria-label="인재채용">인재채용</a></li>
+          <li><a href="\" aria-label="입점/제휴문의">입점/제휴문의</a></li>
+          <li><a href="\" aria-label="공지사항">공지사항</a></li>
+          <li><a href="\" aria-label="고객의 소리">고객의 소리</a></li>
+          <li>
+            <a href="\" aria-label="개인정보 처리방침">개인정보 처리방침</a>
+          </li>
+          <li>
+            <a href="\" aria-label="쿠팡페이 개인정보 처리방침"
+              >쿠팡페이 개인정보 처리방침</a
+            >
+          </li>
+          <li><a href="\" aria-label="신뢰관리센터">신뢰관리센터</a></li>
+          <li><a href="\" aria-label="제휴마케팅">제휴마케팅</a></li>
+          <li><a href="\" aria-label="광고안내">광고안내</a></li>
+        </ul>
+      </article>
+      <article class="footer-mid">
+        <div class="logo-gray"></div>
+        <div class="mid1">
+          <p>상호명 및 호스팅 서비스 제공 : 쿠팡(주)</p>
+          <p>대표이사 : 강한승, 박대준</p>
+          <p>서울시 송파구 송파대로 570</p>
+          <p>사업자 등록번호 : 120-88-00767</p>
+          <p>통신판매업신고 : 2017-서울송파-0680</p>
+        </div>
+        <div class="mid2">
+          <ul>
+            <li>
+              <a href="\" aria-label="365고객센터" style="font-weight: bold"
+                >365고객센터</a
+              >
+            </li>
+            <li>
+              <a href="\" aria-label="전자금융거래분쟁처리담당"
+                >전자금융거래분쟁처리담당</a
+              >
+            </li>
+          </ul>
+          <h1 style="font-weight: bold; color: #4e4e4e; font-size: 48px">
+            1577-7011
+          </h1>
+          <p>서울시 송파구 송파대로 570</p>
+          <p>email : help@coupang.com</p>
+        </div>
+        <div class="mid3">
+          <p>우리은행 채무지급보증 안내</p>
+          <p>
+            당사는 고객님이 현금 결제한 금액에 대해 <br />
+            우리은행과 채무지급보증 계약을 체결하여 <br />안전거래를 보장하고
+            있습니다.
+          </p>
+        </div>
+      </article>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+/* ---------------------------------------------- */
+/* 헤더                                            */
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* 내비게이션                                        */
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+header {
+  margin: 0 auto;
+  align-items: center;
+}
+
+/* 카테고리 버튼 */
+.button--category {
+  width: 110px;
+  height: 116px;
+  display: flex;
+  border: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  background: #0074e9;
+  .menu-img {
+    width: 30px;
+    height: 30px;
+    /* background-image: url(/Mission-04/assets/icon/hamburger.svg); */
+  }
+}
+
+/* 메뉴 뎁스 css 코드 */
+.navigation__inner {
+  display: flex;
+}
+
+.navigation__list {
+  /* display: none; */
+  width: 180px;
+  height: 500px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  li {
+    width: 180px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      color: #0074e9;
+      font-weight: 700;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 30px;
+        display: block;
+        width: 8px;
+        height: 12px;
+        background-image: url(/Mission-05/assets/icon/more-right-active.svg);
+        background-size: cover;
+      }
+    }
+  }
+  &:last-child {
+    li > a {
+      &:hover {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+/* active 클래스 추가 */
+/* 기본적으로 내비게이션은 숨김 상태 */
+.navigation__list {
+  /* display: none; */
+}
+
+/* is--active 클래스가 추가되면 내비게이션 메뉴가 보이도록 설정 */
+.navigation__list.is--active {
+  display: block;
+}
+
+/* ---------------------------------------------- */
+
+/* ---------------------------------------------- */
+/* 메인 콘텐츠                                       */
+/* ---------------------------------------------- */
+/* 메인 콘텐츠 영역의 최소 높이 설정 */
+.main {
+  min-height: 52rem;
+}
+
+/* ---------------------------------------------- */
+/* 푸터                                            */
+
+.footer {
+  .footer-top {
+    height: 40px;
+    background: #e7e7e7;
+    .footer-top-list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 10px;
+      /* gap: 10px; */
+      li {
+        padding: 0px 14px;
+        border-right: 1px solid #272727;
+        &::after {
+          border: none;
+        }
+      }
+    }
+  }
+  .footer-mid {
+    width: 100%;
+    height: 207px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    .logo-gray {
+      width: 176px;
+      height: 40px;
+      background-image: url(/Mission-05/assets/logo/logo-mono.svg);
+    }
+    .mid1 {
+      display: flex;
+      gap: 12px;
+      color: #4e4e4e;
+      font-size: 16px;
+      font-weight: 400;
+      flex-direction: column;
+    }
+    .mid2 {
+      ul {
+        display: flex;
+        gap: 10px;
+        li {
+          padding: 0 px;
+          font-size: 16px;
+          font-weight: 400;
+          &:nth-child(1) {
+            border-right: 1px solid #272727;
+            padding-right: 10px;
+          }
+        }
+      }
+      h1 {
+        margin: 16px 0;
+      }
+      p {
+        color: #4e4e4e;
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+  }
+  .footer-bottom {
+    width: 100%;
+    height: 102px;
+    background: #272727;
+  }
+}
+/* ---------------------------------------------- */
