@@ -1,11 +1,12 @@
 import "./navigation.js";
 
-const menu = document.querySelector(".button--category");
-const nav = document.querySelector(".navigation__list");
+const categoryButton = document.querySelector(".button--category");
+const navList = document.querySelector(".navigation__list");
 
-menu.addEventListener("mouseenter", () => {
-  nav.classList.add("is--active");
+categoryButton.addEventListener("mouseenter", () => {
+  navList.classList.add("is--active");
 });
-menu.addEventListener("mouseleave", () => {
-  nav.classList.remove("is--active");
+
+navList.addEventListener("mouseleave", () => {
+  navList.classList.remove("is--active");
 });
