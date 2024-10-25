@@ -68,7 +68,7 @@ header {
 }
 
 .depth2,
-depth3 {
+.depth3 {
   position: absolute;
   top: 0;
 }
@@ -83,21 +83,24 @@ depth3 {
     .depth3 {
       position: absolute;
       top: 0;
-      right: 360px;
+      left: 180px;
     }
   }
 }
 
+.navigation__list > li > a {
+  display: block;
+}
+
 /* 첫번째 뎁스 호버 이벤트 */
-.navigation__list > li:hover {
+.navigation__list > li > a:hover {
   color: #0074e9;
   font-weight: bold;
-  position: relative;
   &::after {
     content: "";
     width: 8px;
     height: 10px;
-    background-image: url(/Mission-05/assets/icon/more-right-active.svg);
+    background-image: url(/assets/icon/more-right-active.svg);
     position: absolute;
     right: 20px;
     background-repeat: no-repeat;
@@ -106,9 +109,60 @@ depth3 {
   }
 }
 
+/* 두번째 뎁스 호버 이벤트 */
+.depth2 > li > a:hover {
+  color: #0074e9;
+  font-weight: bold;
+  &::after {
+    content: "";
+    width: 8px;
+    height: 10px;
+    background-image: url(/assets/icon/more-right-active.svg);
+    position: absolute;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* 세번째 뎁스 호버 이벤트 */
+.depth3 > li > a:hover {
+  color: #0074e9;
+  font-weight: bold;
+  &::after {
+    content: "";
+    width: 8px;
+    height: 10px;
+    /* background-image: url(/assets/icon/more-right-active.svg); */
+    position: absolute;
+    right: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+}
+
+/* active 이벤트 */
+
+.navigation__list {
+  display: none;
+}
+
 .depth2,
 .depth3 {
   display: none;
+  li {
+    a {
+      display: inline-block;
+      width: 156px;
+    }
+  }
+}
+.navigation__list.is--active,
+.depth2.is--active,
+.depth3.is--active {
+  display: flex;
 }
 
 /* 네비게이션 호버 이벤트 */
@@ -139,6 +193,7 @@ depth3 {
       li {
         padding: 0px 14px;
         border-right: 1px solid #272727;
+        font-size: 12px;
         &::after {
           border: none;
         }
@@ -230,6 +285,16 @@ depth3 {
           );
         }
       }
+    }
+  }
+}
+
+/* 푸터 미디어쿼리 */
+@media screen and (max-width: 1200px) {
+  footer {
+    width: 1920px;
+    position: relative;
+    article {
     }
   }
 }
