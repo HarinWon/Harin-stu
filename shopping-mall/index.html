@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>쇼핑몰</title>
-    <!-- font Awesome -->
-    <script
-      src="https://kit.fontawesome.com/3d3f071495.js"
-      crossorigin="anonymous"
-    ></script>
+    <title>Document</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
     <!-- css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- navbar -->
     <nav class="navbar">
       <div class="nav-center">
-        <!-- link -->
+        <!-- links -->
         <div>
           <button class="toggle-nav">
             <i class="fas fa-bars"></i>
@@ -25,7 +27,7 @@
               <a href="index.html" class="nav-link">home</a>
             </li>
             <li>
-              <a href="product.html" class="nav-link">product</a>
+              <a href="products.html" class="nav-link">products</a>
             </li>
             <li>
               <a href="about.html" class="nav-link">about</a>
@@ -47,10 +49,10 @@
     </nav>
     <!-- hero -->
     <section class="hero">
-      <h1 class="text-slanted">we sell someting</h1>
       <div class="hero-container">
+        <h1 class="text-slanted">we sell something</h1>
         <h3>sell everything - it is good</h3>
-        <a href="product.html" class="hero-btn">show now</a>
+        <a href="products.html" class="hero-btn">show now</a>
       </div>
     </section>
     <!-- sidebar -->
@@ -63,19 +65,19 @@
         <!-- links -->
         <ul class="sidebar-links">
           <li>
-            <a href="index.html">
+            <a href="index.html" class="sidebar-link">
               <i class="fas fa-home fa-fw"></i>
               home
             </a>
           </li>
           <li>
-            <a href="products.html">
+            <a href="products.html" class="sidebar-link">
               <i class="fas fa-couch fa-fw"></i>
               products
             </a>
           </li>
           <li>
-            <a href="about.html">
+            <a href="about.html" class="sidebar-link">
               <i class="fas fa-book fa-fw"></i>
               about
             </a>
@@ -94,7 +96,7 @@
         </header>
         <!-- cart items -->
         <div class="cart-items"></div>
-        <!-- footer  -->
+        <!-- footer -->
         <footer>
           <h3 class="cart-total text-slanted">total : $13.00</h3>
           <button class="cart-checkout btn">checkout</button>
@@ -109,11 +111,11 @@
       <div class="featured-center section-center">
         <h2 class="section-loading">loading...</h2>
         <!-- single product -->
-        <article class="product">
+        <!-- <article class="product">
           <div class="product-container">
-            <img src="images/main-bcg.jpeg" class="product img img" alt="img" />
+            <img src="images/main-bcg.jpeg" class="product-img img" alt="" />
             <div class="product-icons">
-              <a href="product.html?id=1" class="product icon">
+              <a href="product.html?id=1" class="product-icon">
                 <i class="fas fa-search"></i>
               </a>
               <button class="product-cart-btn product-icon" data-id="1">
@@ -121,13 +123,13 @@
               </button>
             </div>
           </div>
-          <a href="products.html">all products</a>
           <footer>
             <p class="product-name">name</p>
             <h4 class="product-price">$13.00</h4>
           </footer>
-        </article>
+        </article> -->
       </div>
+      <a href="products.html" class="btn">all products</a>
     </section>
     <script type="module" src="script.js"></script>
   </body>
